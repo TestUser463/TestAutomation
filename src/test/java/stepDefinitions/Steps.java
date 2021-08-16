@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
-import pageObjects.AddCustomerPage;
+
 import pageObjects.LoginPage;
-import pageObjects.SearchCustomerPage;
+
 
 public class Steps extends BaseClass {
 
@@ -96,84 +96,6 @@ public class Steps extends BaseClass {
 	   driver.quit();
 	}
 
-	//customers feature started
-	@Then("User can view Dashboard")
-	public void user_can_view_dashboard() {
-	    
-		addCust=new AddCustomerPage(driver);
-		Assert.assertEquals("Dashboard / nopCommerce administration", addCust.getPageTitle());
-	}
-	@When("User click on customers Menu")
-	public void user_click_on_customers_menu() throws InterruptedException {
-		Thread.sleep(3000);
-	    addCust.clickOnCustomersMenu(); 
-	}
-	@When("click on customers Menu Item")
-	public void click_on_customers_menu_item() throws InterruptedException {
-		Thread.sleep(2000);
-	    addCust.clickOnCustomersMenuItem();
-	}
-	@When("Click on Add new button")
-	public void click_on_add_new_button() throws InterruptedException {
-		addCust.clickOnAddNew();
-		Thread.sleep(3000);
-	    
-	}
-	@Then("User can view Add new customer page")
-	public void user_can_view_add_new_customer_page() {
-		
-		Assert.assertEquals("Add a new customer / nopCommerce administration", addCust.getPageTitle());
-	   
-	}
-	@When("User enter customer info")
-	public void user_enter_customer_info() throws InterruptedException {
-		logger.info("***********Adding a new customer********");
-		logger.info("***********Providing customer details********");
-	   String email=randomestring()+ "@gmail.com";
-	   addCust.setEmail(email);
-	   addCust.setPassword("test123");
-	   addCust.setCustomerRoles("Guests");
-	   Thread.sleep(3000);
-	   addCust.setManagerOfVendor("Your store name");
-	   addCust.setGender("Male");
-	   addCust.setFirstName("XYZ");
-	   addCust.setLastName("ABC");
-	   addCust.setDOB("10/10/1985");
-	   addCust.setCompanyName("QA");
-	   addCust.setAdminContent("This is for testing.....");
-	}
-	@When("click on Save button")
-	public void click_on_save_button() throws InterruptedException {
-		logger.info("***********Saving customer data********");
-	    addCust.clickOnSave();
-	    Thread.sleep(2000);
-	}
-	@Then("user can view confirmation message {string}")
-	public void user_can_view_confirmation_message(String msg) {
-	   Assert.assertTrue(driver.findElement(By.tagName("body")).getText()
-			 .contains("The new customer has been added successfully"));
-	}
-	
-	SearchCustomerPage searchCust;
-	@When("Enter Customer Email")
-	public void enter_customer_email() {
-	    searchCust = new SearchCustomerPage(driver);
-	    searchCust.setEmail("victoria_victoria@nopCommerce.com");
-	    
-	}
-	@When("Click on Search Button")
-	public void click_on_search_button() throws InterruptedException {
-		logger.info("***********Searching customer********");
-		searchCust.clickSearch();
-		Thread.sleep(3000);
-	   
-	}
-	@Then("User should found Email in the search table")
-	public void user_should_found_email_in_the_search_table() {
-		boolean status=searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
-		Assert.assertEquals(true, status);
-	}
-	
 
 }
 

@@ -12,8 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue="stepDefinitions",
 		dryRun=false,
 		monochrome=true,
-		plugin= {"pretty","html:test-output"},
-		tags= "@sanity"
+		plugin= {"pretty","html:test-output"}
 		)
 public class TestRun {
 

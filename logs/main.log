@@ -61,3 +61,33 @@
 2021-05-06 16:36:24,506 +0530 [main] INFO  (Steps.java:88) - ***********Click on logout link********
 2021-05-06 16:36:38,670 +0530 [main] INFO  (Steps.java:80) - ***********Login Failed********
 2021-05-06 16:36:41,678 +0530 [main] INFO  (Steps.java:95) - ***********Closing Browser********
+2021-06-20 13:55:21,754 +0530 [main] INFO  (Steps.java:48) - ***********Launching Browser********
+2021-06-20 13:55:22,099 +0530 [main] INFO  (Steps.java:54) - ***********Opening URL***********
+2021-06-20 13:55:25,299 +0530 [main] INFO  (Steps.java:61) - ***********Providing login details********
+2021-06-20 13:55:25,650 +0530 [main] INFO  (Steps.java:68) - ***********Started login ********
+2021-06-20 13:55:46,172 +0530 [main] INFO  (Steps.java:166) - ***********Searching customer********
+2021-06-20 13:55:49,432 +0530 [main] INFO  (Steps.java:95) - ***********Closing Browser********
+2021-06-20 13:55:51,790 +0530 [main] INFO  (Steps.java:48) - ***********Launching Browser********
+2021-06-20 13:55:51,793 +0530 [main] INFO  (Steps.java:54) - ***********Opening URL***********
+2021-06-20 13:55:55,804 +0530 [main] INFO  (Steps.java:61) - ***********Providing login details********
+2021-06-20 13:55:56,188 +0530 [main] INFO  (Steps.java:68) - ***********Started login ********
+2021-06-20 13:56:04,317 +0530 [main] INFO  (Steps.java:80) - ***********Login Failed********
+2021-06-20 13:56:07,347 +0530 [main] INFO  (Steps.java:88) - ***********Click on logout link********
+2021-06-20 13:56:23,054 +0530 [main] INFO  (Steps.java:80) - ***********Login Failed********
+2021-06-20 13:56:26,055 +0530 [main] INFO  (Steps.java:95) - ***********Closing Browser********
+2021-08-17 00:38:14,894 +0530 [main] INFO  (Steps.java:48) - ***********Launching Browser********
+2021-08-17 00:38:14,997 +0530 [main] INFO  (Steps.java:54) - ***********Opening URL***********
+2021-08-17 00:38:19,065 +0530 [main] INFO  (Steps.java:61) - ***********Providing login details********
+2021-08-17 00:38:19,442 +0530 [main] INFO  (Steps.java:68) - ***********Started login ********
+2021-08-17 00:38:41,600 +0530 [main] INFO  (Steps.java:166) - ***********Searching customer********
+2021-08-17 00:38:44,967 +0530 [main] INFO  (Steps.java:95) - ***********Closing Browser********
+2021-08-17 00:38:49,022 +0530 [main] INFO  (Steps.java:48) - ***********Launching Browser********
+2021-08-17 00:38:49,027 +0530 [main] INFO  (Steps.java:54) - ***********Opening URL***********
+2021-08-17 00:47:14,610 +0530 [main] INFO  (Steps.java:48) - ***********Launching Browser********
+2021-08-17 00:47:15,504 +0530 [main] INFO  (Steps.java:54) - ***********Opening URL***********
+2021-08-17 00:47:20,963 +0530 [main] INFO  (Steps.java:61) - ***********Providing login details********
+2021-08-17 00:47:21,450 +0530 [main] INFO  (Steps.java:68) - ***********Started login ********
+2021-08-17 00:47:32,736 +0530 [main] INFO  (Steps.java:80) - ***********Login Failed********
+2021-08-17 00:47:35,758 +0530 [main] INFO  (Steps.java:88) - ***********Click on logout link********
+2021-08-17 00:47:50,151 +0530 [main] INFO  (Steps.java:80) - ***********Login Failed********
+2021-08-17 00:47:53,168 +0530 [main] INFO  (Steps.java:95) - ***********Closing Browser********
