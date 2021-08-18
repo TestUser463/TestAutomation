@@ -8,7 +8,7 @@ node(){
 			echo"Workspace set to:"+env.WORKSPACE_LOCAL
 		}
 		stage('Checkout Self'){
-		git branch:'master',credentialsId:'',url:repoURL
+		git branch:'XrayVideo',credentialsId:'TestUser463',url:repoURL
 		}
 		stage('Cucumber Tests'){
 			withMaven(maven:'maven35'){
