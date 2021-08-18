@@ -25,13 +25,13 @@ node(){
 		
 		stage('Import results to Xray'){
 		
-		def description ="[BUILD_URL|$(env.BUILD_URL)]"
+		def description ="[BUILD_URL|${env.BUILD_URL}]"
 		def labels='["regression"]'
 		def environment="Test"
 		def testExecutionFieldId=10603
 		def projectKey="Test Automation"
 		def xrayConnectorId='db49b802-23cf-4fea-bdbb-c1ab1f612b6f'
-		def info='''(
+		def info='''{
 				"fields":{
 					"project":{
 					"key":"''' +projectKey+'''"
@@ -45,11 +45,10 @@ node(){
 					["''' +environment+'''"
 					]
 					}
-					)'''
+					}'''
 				echo info
+				
+			step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart', importFilePath: 'target/cucumber-json/cucumber.json', importInParallel: 'false', importInfo: ''', inputInfoSwitcher: 'fileContent', serverInstance:xrayConnectorId])
 		}
 		
-		step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart', importFilePath: 'target/cucumber-json/cucumber.json', importInParallel: 'false', importInfo: ''', inputInfoSwitcher: 'fileContent', serverInstance:xrayConnectorId])
-
-		}
 }
