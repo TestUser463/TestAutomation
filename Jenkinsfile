@@ -22,4 +22,10 @@ node(){
 			archive "**/cucumber.json"
 			cucumber '**/cucumber.json'
 		}
+	
+	stage('Import results to Xray') {
+            steps {
+                step([$class: 'XrayImportBuilder', endpointName: '/cucumber', importFilePath: 'target/cucumber-json/cucumber.json', serverInstance: 'db49b802-23cf-4fea-bdbb-c1ab1f612b6f'])
+            }
+        }
 }
