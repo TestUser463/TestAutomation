@@ -7,13 +7,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions
-		(
-		features={".//Features/"},
-		glue="stepDefinitions",
-		dryRun=false,
-		monochrome=true,
-		plugin= {"pretty","html:test-output"}
-		)
+(
+features={".//Features/Login2.feature"},
+glue="stepDefinitions",
+dryRun=false,
+monochrome=true,
+plugin= {"pretty","json:target/cucumber-json/cucumber.json","html:test-output"}
+)
 public class TestRun {
 
 }
